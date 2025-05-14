@@ -42,7 +42,8 @@ public class JasperCtl extends BaseCtl {
 		try {
 			ResourceBundle rb = ResourceBundle.getBundle("in.co.rays.project_3.bundle.system");
 			/* Compilation of jrxml file */
-			JasperReport jasperReport = JasperCompileManager.compileReport(rb.getString("jasperctl"));
+			JasperReport jasperReport = JasperCompileManager.compileReport("C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\p3333@tmp");
+			
 
 			HttpSession session = request.getSession(true);
 			UserDTO dto = (UserDTO) session.getAttribute("user");
