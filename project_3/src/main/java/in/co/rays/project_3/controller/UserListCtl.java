@@ -104,7 +104,6 @@ public class UserListCtl extends BaseCtl {
 			ServletUtility.handleException(e, request, response);
 			return;
 		} catch (Exception e) {
-// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		log.debug("UserListCtl doPOst End");
@@ -198,7 +197,6 @@ public class UserListCtl extends BaseCtl {
 			ServletUtility.handleException(e, request, response);
 			return;
 		} catch (Exception e) {
-// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		log.debug("UserListCtl doGet End");
@@ -208,5 +206,4 @@ public class UserListCtl extends BaseCtl {
 	protected String getView() {
 		return ORSView.USER_LIST_VIEW;
 	}
-
 }
